@@ -1,0 +1,16 @@
+{
+  "name": "nimbus-swap-subgraph-eth",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ StasKazikin/nimbus-swap-subgraph-eth",
+    "create-local": "graph create --node http://localhost:8020/ StasKazikin/nimbus-swap-subgraph-eth",
+    "remove-local": "graph remove --node http://localhost:8020/ StasKazikin/nimbus-swap-subgraph-eth",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 StasKazikin/nimbus-swap-subgraph-eth"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.21.1",
+    "@graphprotocol/graph-ts": "0.20.0"
+  }
+}
